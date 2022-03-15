@@ -45,10 +45,12 @@ class GameManager {
         document.addEventListener('keyup', clickControl);
     }
 
-    console.log(checkIsGameOver());
+    checkIsGameOver() {
+        console.log('checkIsGameOver()');
+    }
 }
 
-class Board() {
+class Board {
     constructor() {
         this.widthBoard = 4;
         this.squares = [];
@@ -70,22 +72,32 @@ class Board() {
          this.wrapper.appendChild(fragment);
      }
 
-     console.log(generateNewCell());
+     generateNewCell() {
+        console.log('generateNewCell()');
+     }
 
-     console.log(addColours());
+     addColours() {
+         console.log('addColours()');
+     }
 }
 
-class Cell() {
+class Cell {
     constructor() {
         this.value = '';
         this.dom = null;
     }
 
-    console.log(getValue());
+    getValue() {
+        console.log('getValue()');
+    }
 
-    console.log(setValue());
+    setValue() {
+        console.log('setValue()');
+    }
     
-    console.log(getNewElement());
+    getNewElement() {
+        console.log('getNewElement()');
+    }
 }
 
 const start = new GameManager();
